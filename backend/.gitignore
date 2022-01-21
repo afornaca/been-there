@@ -131,3 +131,6 @@ dist
 
 # Nodemon
 nodemon.json
+
+# Image Uploads
+uploads/
