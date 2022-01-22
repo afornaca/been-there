@@ -82,7 +82,7 @@ const Auth = () => {
             "Content-Type": "application/json",
           }
         );
-        auth.login(responseData.user.id);
+        auth.login(responseData.userId, responseData.token);
       } catch (err) {
         // empty, we just made try/catch so we can only auth.login() when http-hook doesn't throw an error
       }
@@ -100,7 +100,7 @@ const Auth = () => {
           "POST",
           formData
         );
-        auth.login(responseData.user.id);
+        auth.login(responseData.userId, responseData.token);
       } catch (err) {
         // empty, we just made try/catch so we can only auth.login() when http-hook doesn't throw an error
       }
