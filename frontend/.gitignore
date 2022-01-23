@@ -25,3 +25,9 @@ yarn-error.log*
 # env
 .env
 .env.production
+
+# firebase
+frontend/.firebase/
+frontend/.firebaserc
+frontend/firebase.json
+
